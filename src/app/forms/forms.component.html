@@ -1,0 +1,11 @@
+<form>
+    <div class="form-group">
+        <label>Username:</label>
+        <input type="text" class="form-control" ngModel name="username" required username #username = "ngModel">
+        <span class="help-block" *ngIf="!username.valid && username.touched">please enter valid username</span>
+    </div><br>
+    <label>PASSWORD:</label>
+    <input type="password" class="form-control" ngModel name="password" required><br>
+    <button class="btn btn-success" id="a">submit</button>
+        </form>
+    
